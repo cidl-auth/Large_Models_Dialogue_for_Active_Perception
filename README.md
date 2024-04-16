@@ -11,6 +11,7 @@ We conduct our experiments in a high fidelity simulation environment where an LL
 <div align="center">
   <img src="./result_images/framework_overview.jpg" width=50% height="50%">
 </div>
+
 All the experiments were conducted using the [AirSim](https://github.com/microsoft/AirSim) simulation environment. Our work is inspired by the [ChatGPT for Robotics](https://www.microsoft.com/en-us/research/group/autonomous-systems-group-robotics/articles/chatgpt-for-robotics/) paper and builds upon their established [framework](https://github.com/microsoft/PromptCraft-Robotics). For the LLM, we employed the GPT3.5 model using the [OpenAI API](https://platform.openai.com). For the VQA model, we used the [PnP VQA framework](https://arxiv.org/abs/2210.08773) found inside the `\llm-vqa_dialogue\lavis\models\pnp_vqa_models`.
 
 ## Getting Started
