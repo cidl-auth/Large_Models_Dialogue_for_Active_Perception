@@ -28,7 +28,7 @@ pip install airsim
 - Set up an API key by visiting https://platform.openai.com/account/api-keys. Copy the API key and paste it in the `OPENAI_API_KEY` field of `config.json`.
 
 ## Running the experiment
-- Pick an environment from `\sample_environments\` and run the executable file inside the folder. (The drone settings are inside the `\Environment_name\Binaries\Win64` directory for any possible changes).
+- Download one of the environment rar files from [Releases](https://github.com/Tzoulio/Large_Models_Dialogue_for_Active_Perception/releases) and unzip the package. Run the executable file inside the folder. (The drone settings are inside the `\Environment_name\Binaries\Win64` directory for any possible changes).
 - Run `python llm-vqa_dialogue.py` after opening the simulation environment to execute our framework.
 - To get the image-caption matching score, add the baseline caption, the proposed caption and the saved position list inside the `test_scores.py` script and run `python test_scores.py` while the simulation environment is running.
 - To influence the GPT controller and explore different behaviors, edit the `rules_prompt.txt` and `example_prompt.txt` files by adding or removing information on the prompts.
