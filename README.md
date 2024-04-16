@@ -8,7 +8,9 @@ Autonomous aerial monitoring is an important task aimed at gathering information
 We conduct our experiments in a high fidelity simulation environment where an LLM is provided with a predetermined set of natural language movement commands mapped into executable code functions. Additionally, we deploy a multimodal Visual Question Answering (VQA) model charged with the task of visual question answering and captioning. By engaging the two models in conversation, the LLM asks exploratory questions while simultaneously flying a drone into different parts of the scene, providing a novel way to implement active perception.  By leveraging LLM's reasoning ability, we output an improved detailed description of the scene going beyond existing static perception approaches. In addition to information gathering, our approach is utilized for anomaly detection within the surveillance environment and our results demonstrate the system's effectiveness in informing and alerting about potential hazards.
 
 ## Software Implementation
-
+<div align="center">
+  <img src="./result_images/framework_overview.jpg" width=50% height="50%">
+</div>
 All the experiments were conducted using the [AirSim](https://github.com/microsoft/AirSim) simulation environment. Our work is inspired by the [ChatGPT for Robotics](https://www.microsoft.com/en-us/research/group/autonomous-systems-group-robotics/articles/chatgpt-for-robotics/) paper and builds upon their established [framework](https://github.com/microsoft/PromptCraft-Robotics). For the LLM, we employed the GPT3.5 model using the [OpenAI API](https://platform.openai.com). For the VQA model, we used the [PnP VQA framework](https://arxiv.org/abs/2210.08773) found inside the `\llm-vqa_dialogue\lavis\models\pnp_vqa_models`.
 
 ## Getting Started
@@ -51,6 +53,10 @@ pip install airsim
 |Proposed           |Lake              |**0.76**                     |
 |Baseline           |Snow              |0.20                         |
 |Proposed           |Snow              |**0.83**                     |
+
+<img src="./result_images/test_Explanation.jpg" width=80% height="50%">
+<img src="./result_images/fire_explanation.jpg" width=80% height="50%">
+
 
 ## License
 
