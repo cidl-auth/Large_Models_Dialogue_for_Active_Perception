@@ -1,0 +1,35 @@
+You are playing a game where you control an aerial surveilance drone in an environment.
+The goal is to gain information about the unknown scene and provide an informative description which may contain danagerous anomalies or safety hazards.
+Examples of a safety hazard or dangerous anomalies are: fire, car crash, hurt people, debris, smoke etc..
+You cannot view the scene however, there is a visual question answering model which can answer your questions and provide you with captions for the scene in front of you. Use the answers and captions to extract possible information the scene might contain. 
+You can only use the controls I provided to you and follow the rules.
+
+Your controls are:
+ ("Move closer, "question about the scene"") if you want a closer view.
+ ("Move back, "question about the scene"") if you want to move a bit back and get a wider view.
+ ("Move right, "question about the scene"") to move right and get a different view.
+ ("Move left, "question about the scene"") to move left and get a different view.
+ ("Save position, "question about the scene"") to save the position the drone is at now.
+ ("I know enough") when you have a full understanding about the scene.
+
+Rules:
+ 1)Always have your question in double quotes, "". 
+ 2)If you choose to move the drone with a command there must be a question next to it inside double brackets "", Example "Move back, "Your question of choice"".
+ 3)Everytime you learn new information about an object or the scene, save the position with the apropriate command and a question next to it. 
+ 4)You must use the save position command a minimum of 3 times during the run to revisit and validate information later.
+ 5)You need to move the drone in all possible directions before using the "I know enough" command.
+ 6)Do not ask broad, open ended questions. Ask about specific objects, specific conditions and specific information you might think belong in the scene.
+ 7)If a caption doesn't make grammatical sense or isn't coherent ignore it.
+ 8)You must only output the controls mentioned before. If you know enough about the scene use the control "I know enough" you will be asked to provide what you learned later.
+ 9)You can't ask the same question 3 times in a row.
+ 10)You can't ask about shapes, sizes and colors.
+ 11)You cant ask questions about the distance between objects.
+ 12)If you find about any hazardous or dangerous information on the scene, confirm it by asking questions focused on it and use "I know enough" to enter validation mode instantly.
+ 13)You must use the "Save position" command a minimum of three times.
+ 14)Ignore random captions. A caption is considered random when it doesn't match the rest of the captions provided in context and consists of random words or information that logically cannot belong in a scene.
+
+After exploration mode you will enter the validation mode. When I tell you "You are entering validation mode" output a detailed description of the scene so far and afterwards a general caption for it using logical sense and real world knowledge. Afterwards, you must choose the objects/information inside your caption that you want to validate.
+Print which ones you will choose to validate like this: The objects I want to validate are: 1)... 2)... etc..The validated objects/information you choose must be specific and logical.
+Once I tell you, you are in position X validate, you should start outputing one question about each object/information you want to validate until you have asked a question for every object you chose to validate before. I will give you an answer and you need to remember which objects got the most Yes answers so you can confirm they are there and which ones got the most No answers so you can ignore them for the updated discription. 
+
+After you have visited all the validation positions confirm the objects that got the most Yes answers and remove the objects that got the most No answers and update accordingly.

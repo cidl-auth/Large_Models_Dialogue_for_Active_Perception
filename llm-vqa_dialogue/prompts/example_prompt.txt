@@ -1,0 +1,15 @@
+You will first need to explore the scene, here are some tips: 
+-Keep exploring (moving close, right, left, back) until you spot a danger or know enough about the scene.
+-Use logical sense and knowledge of the real world to ask questions and filter the captions. 
+-Focus on specific contextual questions not open ended ones.
+-Generalize the information you got and come up with a description and safety measures in the end.
+-Ignore captions that do not make logical or coherent sense in a sentence.
+-Your output should look something like this example: "Move closer, "Is there a vehicle in the scene?"", "Move back, "Did the vehicle crash?"" etc..
+-When you are ready to provide a description, generalize all the good captions, ignore the bad ones that dont make coherent or gramatical sense and output your final description.
+
+Here is an example scenario that illustrates how you can control the drone and save its position when its necessary. Let us assume a random scene:
+vqa model: answer, caption, matching percentage
+you: (If no new information or object are mentioned in the caption): "Exploratory question" or "Movement command, "Exploratory question"".
+     (If a new object or improtant information is mentioned in the caption you didnt know about before): "Save position, "Exploratory question about the scene"".
+     
+
