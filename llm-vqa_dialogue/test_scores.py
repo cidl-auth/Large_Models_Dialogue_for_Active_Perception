@@ -24,8 +24,8 @@ aw.takeoff()
 position_list = []
 
 ## Add the first caption outputted from the vqa model and the last caption of the the llm-vqa_dialogue.py script and replace the variables below.
-baseline = "a picture looking into the snow - capped mountains with a lake below a rocky surface"
-proposed ="A tranquil winter scene with snow-capped mountains and a lake below, devoid  of any man-made structure or train activity."
+baseline = ""
+proposed =""
 index = 1
 for position in position_list:
     aw.fly_to(position)
