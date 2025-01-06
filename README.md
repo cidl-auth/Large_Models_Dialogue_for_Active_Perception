@@ -62,3 +62,24 @@ pip install airsim
 ## License
 
 All source code is made available under the MIT license.
+
+## Reference
+The code provided in this repository accompanies our paper published in ICPR 2024.
+If you use this code in your work, please cite the following paper:
+
+<pre>
+@inproceedings{chamiti2025large,
+  title={Large models in dialogue for active perception and anomaly detection},
+  author={Chamiti, Tzoulio and Passalis, Nikolaos and Tefas, Anastasios},
+  booktitle={International Conference on Pattern Recognition},
+  pages={371--386},
+  year={2024},
+}
+</pre>
+
+## Acknowledgments
+
+The work presented here is supported by the RoboSAPIENS project funded by the European Commission’s Horizon Europe programme under grant agreement number 101133807. This publication reflects the authors’ views only. The European Commission is not responsible for any use that may be made of the information it contains.
+
+Learn more about [RoboSAPIENS](https://robosapiens-eu.tech/).
+
