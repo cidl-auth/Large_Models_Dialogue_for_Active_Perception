@@ -81,5 +81,17 @@ If you use this code in your work, please cite the following paper:
 
 The work presented here is supported by the RoboSAPIENS project funded by the European Commission’s Horizon Europe programme under grant agreement number 101133807. This publication reflects the authors’ views only. The European Commission is not responsible for any use that may be made of the information it contains.
 
-Learn more about [RoboSAPIENS](https://robosapiens-eu.tech/).
+<p align="center">
+<img src="https://robosapiens-eu.tech/wp-content/uploads/elementor/thumbs/europeanlogo-r2pgiiytkuoyehehz8416uvf52f3bxv6hkmztxq1am.jpeg"
+     alt="EU Flag"
+     width="120" />
+</p>
+<p align="center">
+Learn more about <a href="https://robosapiens-eu.tech/">RoboSAPIENS</a>.
+</p>
+<p align="center">
+<img src="https://robosapiens-eu.tech/wp-content/uploads/elementor/thumbs/full_robot2-r2pgiiysrgwxbxr64iuhw1nmi4k46lxqopg2va2qos.png"
+     alt="RoboSAPIENS Logo"
+     width="80" />     
+</p>
 
